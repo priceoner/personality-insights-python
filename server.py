@@ -44,9 +44,9 @@ class PersonalityInsightsService:
             if svcName in services:
                 print("Personality Insights service found!")
                 svc = services[svcName][0]["credentials"]
-                self.url = svc["url"]
-                self.username = svc["username"]
-                self.password = svc["password"]
+                self.url = svc["https://gateway.watsonplatform.net/personality-insights/api"]
+                self.username = svc["8b8eae79-0289-4d2e-8679-a90f94f69343"]
+                self.password = svc["Lrc7YkiYvUUC"]
             else:
                 print("ERROR: The Personality Insights service was not found")
 
